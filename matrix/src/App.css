@@ -1,12 +1,19 @@
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Monocraft';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/Monocraft.otf') format('woff'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
 body {
     color: black;
-    font-family: "Tiny5", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-
+    font-family: "Monocraft", sans-serif;
 }
 
 .matrix {
+    padding-top: 2%;
     width: 100%;
     height: 620px;
     display: flex;
@@ -17,38 +24,46 @@ body {
 }
 
 .text-overlay {
-    position: absolute; /* Текст будет находиться над анимацией */
-    top: 30%;
-    left: 20%;
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
     transform: translate(-50%, -50%);
-    z-index: 2; /* Передний план */
-    text-align: center;
+    z-index: 2;
+    padding-left: 2.5%;
     color: white;
+    border-radius: 20px;
+    background: #141414;
+    font-size: 1.2rem;
 }
 
 .text-overlay h1 {
-    font-size: 3rem;
-    color: #00FF00; /* Зеленый цвет текста */
-    text-shadow: 0 0 10px #00FF00; /* Свечение текста */
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #ffffff;
+    /*text-shadow: 0 0 10px #00FF00;*/
 }
 
-.text-below {
-    position: absolute;
-    top: 70%; /* Положение ниже заголовка */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-align: center;
-    color: white;
-
-}
-
-.text-below p {
-    font-size: 1.9rem;
-    color: white;
-}
 
 .question-text {
+    margin-top: 20%;
+    margin-right: 20px;
     margin-bottom: 20px;
+    font-size: 25px;
 }
 
+.changer {
+    margin-right: 20px;
+}
+
+
+.gif-overlay {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 52.5%; /* Центрирование по вертикали */
+    left: 75%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Смещение для полного центрирования */
+    width: 400px; /* Ширина GIF */
+    height: 530px; /* Автоматическая высота, чтобы сохранить пропорции */
+    pointer-events: none; /* Игнорировать события мыши (например, клики) */
+}

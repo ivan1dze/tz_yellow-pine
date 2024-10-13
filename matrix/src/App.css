@@ -1,5 +1,5 @@
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Monocraft';
     font-style: normal;
     font-weight: 400;
@@ -20,7 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    position: relative; /* Добавляем relative для контейнера */
+    position: relative;
 }
 
 .text-overlay {
@@ -59,11 +59,12 @@ body {
 
 
 .gif-overlay {
-    position: absolute; /* Абсолютное позиционирование */
-    top: 52.5%; /* Центрирование по вертикали */
-    left: 75%; /* Центрирование по горизонтали */
-    transform: translate(-50%, -50%); /* Смещение для полного центрирования */
-    width: 400px; /* Ширина GIF */
-    height: 530px; /* Автоматическая высота, чтобы сохранить пропорции */
-    pointer-events: none; /* Игнорировать события мыши (например, клики) */
+    position: absolute;
+    top: 52.5%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 530px;
+    pointer-events: none;
+    border-radius: 20px;
 }

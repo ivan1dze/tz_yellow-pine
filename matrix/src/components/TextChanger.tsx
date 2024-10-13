@@ -21,7 +21,7 @@ const TextChanger: React.FC = () => {
 
     const [currentText, setCurrentText] = useState(texts[0]);
     const [index, setIndex] = useState(0);
-    const [color, setColor] = useState('blue'); // Начальный цвет
+    const [color, setColor] = useState('white');
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -33,7 +33,7 @@ const TextChanger: React.FC = () => {
 
     useEffect(() => {
         setCurrentText(texts[index]);
-        setColor(Math.random() > 0.5 ? 'blue' : 'red'); // Случайный выбор цвета
+        setColor(Math.random() > 0.5 ? 'white' : 'white'); // Случайный выбор цвета
     }, [index]);
 
     return (

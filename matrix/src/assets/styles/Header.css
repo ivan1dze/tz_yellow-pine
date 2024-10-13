@@ -16,10 +16,10 @@ body {
 }
 
 .header {
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #570000;
     margin-left: 5%;
     padding: 20px;
     height: 80px;
@@ -42,25 +42,27 @@ body {
 }
 
 .nav-list li a {
+    width: 10%;
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .nav-list li a:hover {
-    color: #00FF00; /* Зеленый цвет при наведении */
+    text-shadow: 0 0 10px #00FF00; /* Зеленый цвет при наведении */
 }
 
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Отступ справа для красивого выравнивания */
+    margin-right: 20px;
+    text-shadow: 0 0 10px #00FF00; /* Отступ справа для красивого выравнивания */
 }
 
 .logo img {
-    height: 40px; /* Высота логотипа */
-    margin-right: 10px; /* Отступ между логотипом и текстом */
+    height: 40px;
+    margin-right: 10px;
 }
 
 .logo-text {

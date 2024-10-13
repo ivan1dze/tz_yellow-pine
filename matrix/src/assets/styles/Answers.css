@@ -1,0 +1,42 @@
+.answers-container {
+    background-color: #000;
+    padding: 3% 3%;
+    padding-top: 10%;
+    text-align: end;
+}
+
+.get-answer p {
+    color: #fff;
+    font-size: 2.5vw;
+    margin-bottom: 2%;
+    font-family: 'Monocraft', sans-serif;
+}
+
+.answers-grid {
+    display: flex;
+    border-radius: 20px;
+    background: #1C1C1C;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3% 3%;
+}
+
+.answer-item {
+    width: 23%;
+    text-align: center;
+}
+
+.answer-item img {
+    width: 270px;
+    height: 270px;
+    padding-top: 10%;
+    border-radius: 1vw; /* Закругленные углы */
+}
+
+.answer-item p {
+    padding-top: 20px;
+    color: white;
+    font-size: 1.2vw; /* Адаптивный размер шрифта */
+    font-family: 'Monocraft', sans-serif;
+    margin-top: 1vw;
+}

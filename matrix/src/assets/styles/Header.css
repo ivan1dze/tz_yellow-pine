@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: white;
+}
+
+.pin {
+    display: flex;
+    align-items: center;
+    margin-right: 5px; /* Дистанция между стрелкой и текстом */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #570000;
+    margin-left: 5%;
+    padding: 20px;
+    height: 80px;
+    width: 90%; /* Ширина на всю страницу */
+    border-radius: 20px;
+    background: #171616;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav-list {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-list li a:hover {
+    color: #00FF00; /* Зеленый цвет при наведении */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Отступ справа для красивого выравнивания */
+}
+
+.logo img {
+    height: 40px; /* Высота логотипа */
+    margin-right: 10px; /* Отступ между логотипом и текстом */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.logo-text span {
+    color: #00FF00; /* Зеленый цвет для "Yellow Pine" */
+}

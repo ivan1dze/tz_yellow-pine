@@ -72,16 +72,16 @@
 
 .step-title {
     font-size: 20px;
-    color: #00FF00; /* Яркий зелёный для выделения заголовка */
+    color: #00FF00;
     margin-bottom: 5px;
-    font-weight: 600; /* Умеренно жирный текст */
+    font-weight: 600;
 }
 
 .step-description {
     font-size: 16px;
-    color: white; /* Описание сделано белым для лучшей читабельности */
-    margin-top: 10px; /* Отступ сверху для улучшения разметки */
-    line-height: 1.5; /* Пространство между строками для удобства чтения */
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
 }
 
 .step-image {

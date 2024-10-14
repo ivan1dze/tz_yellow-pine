@@ -30,13 +30,13 @@
     width: 270px;
     height: 270px;
     padding-top: 10%;
-    border-radius: 1vw; /* Закругленные углы */
+    border-radius: 1vw;
 }
 
 .answer-item p {
     padding-top: 20px;
     color: white;
-    font-size: 1.2vw; /* Адаптивный размер шрифта */
+    font-size: 1.2vw;
     font-family: 'Monocraft', sans-serif;
     margin-top: 1vw;
 }

@@ -1,0 +1,102 @@
+.steps-container {
+    background-color: black;
+    padding: 20px;
+    border: 2px solid green;
+    width: 95%;
+    height: 430px;
+    margin: 2.5% auto 0 auto;
+    border-radius: 10px;
+}
+
+.steps-title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.category {
+    color: #00FF00;
+    font-weight: bold;
+    transition: transform 0.3s;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.category:hover {
+    transform: scale(1.1);
+}
+
+.steps {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.step {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid green;
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    flex: 1;
+    transition: background-color 0.3s;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.step.active {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.week {
+    font-size: 22px;
+    color: white; /* Цвет недели изменен на белый для контраста */
+    margin-bottom: 10px;
+
+    font-weight: bold; /* Жирный текст для выделения */
+}
+
+.step-title {
+    font-size: 20px;
+    color: #00FF00; /* Яркий зелёный для выделения заголовка */
+    margin-bottom: 5px;
+    font-weight: 600; /* Умеренно жирный текст */
+}
+
+.step-description {
+    font-size: 16px;
+    color: white; /* Описание сделано белым для лучшей читабельности */
+    margin-top: 10px; /* Отступ сверху для улучшения разметки */
+    line-height: 1.5; /* Пространство между строками для удобства чтения */
+}
+
+.step-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    transition: opacity 0.3s;
+}
+
+.step.active .step-image {
+    opacity: 0.4;
+}
